@@ -1,0 +1,35 @@
+.getInTouch {
+	/* background: var(--secondaryColor); */
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.moreInfo {
+	color: var(--primaryColor);
+	margin-bottom: 2rem;
+}
+
+.iconBox {
+	border: 0.7px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	margin-right: 2rem;
+	margin-bottom: 1rem;
+	border-radius: 7px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.getInTouch {
+		flex-direction: row;
+		column-gap: 3rem;
+	}
+}

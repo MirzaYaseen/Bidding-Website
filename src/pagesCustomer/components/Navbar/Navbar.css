@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap');
+.header {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1.5rem 2rem;
+	box-shadow: 0 4px 6px rgb(237, 237, 237);
+	z-index: 100;
+	/* background: var(--secondaryColor); */
+	/* background: #fff; */
+	background: linear-gradient(#89e7cc, var(--secondaryColor));
+	height: 90px;
+}
+.header .logoDiv .logo {
+	width: 60px;
+}
+.header .logoDiv span {
+	color: #434344;
+}
+.header .logoDiv:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+	.header .navbar {
+		position: absolute;
+		background: var(--secondaryColor);
+		width: 80%;
+		top: -100rem;
+		right: 50%;
+		left: 50%;
+		transform: translate(-50%);
+		border-radius: 10px;
+		text-align: center;
+		padding: 2rem;
+		transition: 0.3s ease;
+		z-index: 200;
+	}
+	.header .navbar .closeIcon {
+		position: absolute;
+		right: 50%;
+		left: 50%;
+		transform: translate(-50%);
+		background: var(--secondaryColor);
+		color: var(--primaryColor);
+		padding: 3px;
+		border-radius: 50%;
+		font-size: 35px;
+	}
+	.header .navbar .closeIcon:hover {
+		color: lightcoral;
+	}
+	.header .menu {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	.header .menu .listItem {
+		padding: 0.5rem 1rem;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	.header .menu .listItem a {
+		font-size: 15px;
+	}
+	.header .menu .listItem:hover {
+		background: var(--primaryColor);
+		color: var(--whiteColor);
+		transition: 0.3s ease;
+	}
+	.header .menu .listItem:hover a {
+		color: var(--whiteColor);
+	}
+}
+.header .signUp {
+	gap: 0.5rem;
+}
+.header .signUp .text {
+	padding: 3px 10px;
+	background: var(--primaryColor);
+	border-radius: 3px;
+	color: var(--whiteColor);
+	cursor: pointer;
+	font-size: 14px;
+}
+.header .signUp .text:hover {
+	background: var(--secondaryColor);
+	color: var(--blackColor);
+}
+.header .signUp .signin {
+	padding: 3px 10px;
+	border-radius: 3px;
+	background: transparent;
+	color: var(--blackColor);
+	cursor: pointer;
+	font-size: 14px;
+}
+.header .signUp .signin:hover {
+	background: var(--primaryColor);
+	color: var(--whiteColor);
+}
+.header .signUp .toggleNavbarIcon {
+	background: none;
+	color: var(--primaryColor);
+	font-weight: 600;
+	font-size: 25px;
+}
+.header .showNavbar {
+	top: 7rem;
+	transition: 0.5s ease;
+}
+
+.addBg {
+	background: #fff;
+	background: linear-gradient(#89e7cc, var(--secondaryColor));
+}
+
+@media screen and (min-width: 520px) {
+	.header {
+		padding: 0.5rem 1rem;
+	}
+	.header .logoDiv .logo {
+		width: 70px;
+	}
+	.header .signUp .text {
+		padding: 6px;
+		font-size: 16px;
+	}
+	.header .signUp .toggleNavbarIcon {
+		font-size: 30px;
+	}
+}
+@media screen and (min-width: 770px) {
+	.header .navbar .closeIcon {
+		display: none;
+	}
+	.header .navbar .menu {
+		display: flex;
+		flex-direction: row;
+	}
+	.header .navbar .menu .listItem {
+		padding: 0.3rem 1rem;
+		border-radius: 3px;
+	}
+	.header .navbar .menu .listItem a {
+		color: var(--textColor);
+		font-size: 15px;
+	}
+	.header .navbar .menu .listItem:hover {
+		background: var(--primaryColor);
+		color: var(--whiteColor);
+		transition: 0.3s ease;
+	}
+	.header .navbar .menu .listItem:hover a {
+		color: var(--whiteColor);
+	}
+	.header .signUp .text {
+		padding: 6px 10px;
+	}
+	.header .signUp .toggleNavbarIcon {
+		display: none;
+	}
+}
+@media screen and (min-width: 1064px) {
+	.header {
+		padding: 0.3rem 7rem;
+	}
+	.header .logoDiv span {
+		font-size: 18px;
+	}
+	.header .navbar .menu .listItem a {
+		font-size: 18px;
+	}
+	.header .signUp .text {
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 1400px) {
+	.header .navbar .menu .listItem {
+		margin: 0 0.8rem;
+	}
+} /*# sourceMappingURL=Navbar.css.map */

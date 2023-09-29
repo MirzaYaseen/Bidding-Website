@@ -1,0 +1,145 @@
+.review .secContainer .secHeading {
+  justify-content: center;
+  gap: 2%;
+  padding: 1rem 0;
+  margin-bottom: 1.5rem;
+}
+.review .secContainer .secHeading .navBtns {
+  gap: 0.5rem;
+}
+.review .secContainer .secHeading .navBtns .icon {
+  padding: 3px 5px;
+  background: var(--secondaryColor);
+  border-radius: 3px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.review .secContainer .secHeading .navBtns .icon:hover {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.review .secContainer .reviewContainer {
+  gap: 1.5rem;
+}
+.review .secContainer .reviewContainer .singleReview {
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+.review .secContainer .reviewContainer .singleReview .imgDiv {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 5px solid transparent;
+}
+.review .secContainer .reviewContainer .singleReview .imgDiv img {
+  height: 100%;
+  width: 100%;
+}
+.review .secContainer .reviewContainer .singleReview .reviewContent {
+  padding: 10px;
+}
+.review .secContainer .reviewContainer .singleReview .reviewTitle {
+  color: var(--blackColor);
+  font-size: 16px;
+  padding-top: 10px;
+}
+.review .secContainer .reviewContainer .singleReview .desc {
+  color: var(--blackColor);
+  opacity: 0.7;
+  font-size: 14px;
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv {
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: flex-start;
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv {
+  gap: 0.8rem;
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .reviewerImage {
+  border: 2px solid var(--whiteColor);
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 4px 5px rgb(222, 222, 222);
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer {
+  text-align: left;
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer .name {
+  color: var(--blackColor);
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  font-size: 15px;
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer p {
+  color: var(--textColor);
+  font-size: 14px;
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv {
+  gap: 0.3rem;
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv .icon {
+  color: rgb(255, 165, 0);
+}
+.review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv blockquote {
+  font-weight: 600;
+  font-size: 14px;
+}
+.review .secContainer .reviewContainer .singleReview:hover {
+  box-shadow: -10px 0 7px rgb(222, 222, 222), 10px 0 7px rgb(222, 222, 222), 0 10px 7px rgb(222, 222, 222);
+  transform: translateY(-7px);
+}
+.review .secContainer .reviewContainer .singleReview:hover .imgDiv {
+  transform: scale(105%);
+}
+
+@media screen and (min-width: 520px) {
+  .review .secContainer .secHeading {
+    margin-top: 1rem;
+  }
+  .review .secContainer .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .review .secContainer .secHeading .navBtns {
+    gap: 0.5rem;
+  }
+  .review .secContainer .secHeading .navBtns .icon {
+    font-size: 40px;
+  }
+  .review .secContainer .reviewContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewTitle {
+    font-size: 18px;
+  }
+  .review .secContainer .reviewContainer .singleReview .desc {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer .name {
+    font-size: 17px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .leftDiv .aboutReviewer p {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv .icon {
+    font-size: 16px;
+  }
+  .review .secContainer .reviewContainer .singleReview .reviewerDiv .rightDiv blockquote {
+    font-weight: 600;
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 940px) {
+  .review .secContainer .secHeading .secTitle {
+    font-size: 23px;
+  }
+  .review .secContainer .secHeading .navBtns {
+    gap: 1rem;
+  }
+  .review .secContainer .reviewContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=Review.css.map */

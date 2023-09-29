@@ -1,0 +1,116 @@
+.home {
+	padding-top: 8rem;
+}
+.home .homeImage {
+	margin: auto;
+	padding: 1rem;
+	max-width: 80%;
+}
+
+.secContainer {
+	padding: 0 1.5rem;
+	text-align: center;
+	gap: 2rem;
+}
+.secContainer .homeText {
+	display: flex;
+	flex-direction: column;
+}
+.secContainer .homeText .homeSpan {
+	color: var(--textColor);
+	font-weight: 400;
+	font-size: 15px;
+}
+.secContainer .homeText .homeTitle {
+	color: var(--blackColor);
+	font-weight: 700;
+	font-size: 30px;
+}
+.secContainer .homeText .btns {
+	gap: 1.5rem;
+	justify-content: center;
+}
+.secContainer .homeText .btns .btn {
+	padding: 10px 15px;
+	border-radius: 3px;
+	font-weight: 600;
+	margin-top: 0.5rem;
+	font-size: 12px;
+}
+.secContainer .homeText .btns .btn:hover {
+	background: var(--primaryColor);
+	color: var(--whiteColor);
+}
+.secContainer .homeText .btns .btn:nth-child(1) {
+	background: var(--secondaryColor);
+	color: var(--textColor);
+}
+.secContainer .homeText .btns .btn:nth-child(1):hover {
+	background: var(--primaryColor);
+	color: var(--whiteColor);
+}
+.secContainer .homeText .btns .btn:nth-child(2):hover {
+	background: var(--secondaryColor);
+	color: var(--textColor);
+}
+
+@media screen and (min-width: 520px) {
+	.home .secContainer .homeText .homeSpan {
+		font-size: 18px;
+	}
+	.home .secContainer .homeText .homeTitle {
+		font-size: 35px;
+	}
+	.home .secContainer .homeText .btns .btn {
+		font-size: 14px;
+	}
+	.home .homeImage {
+		max-width: 40%;
+	}
+}
+@media screen and (min-width: 770px) {
+	.home {
+		padding-top: 10rem;
+	}
+	.home .secContainer {
+		gap: 2.5rem;
+	}
+	.home .secContainer .homeText .homeSpan {
+		font-size: 21px;
+	}
+	.home .secContainer .homeText .homeTitle {
+		font-size: 45px;
+	}
+	.home .secContainer .homeText .btns {
+		margin-top: 1rem;
+	}
+}
+@media screen and (min-width: 996px) {
+	.home {
+		padding-top: 12rem;
+	}
+	.home .secContainer {
+		gap: 3rem;
+	}
+	.home .secContainer .homeText .homeSpan {
+		font-size: 35px;
+	}
+	.home .secContainer .homeText .homeTitle {
+		font-size: 55px;
+	}
+	.home .secContainer .homeText .btns .btn {
+		font-size: 17px;
+		padding: 0.7rem 2rem;
+	}
+	.home .homeImage {
+		max-width: 50%;
+	}
+}
+@media screen and (min-width: 1240px) {
+	.home .secContainer .homeText .homeSpan {
+		font-size: 30px;
+	}
+	.home .secContainer .homeText .btns .btn {
+		font-size: 17px;
+	}
+} /*# sourceMappingURL=Home.css.map */

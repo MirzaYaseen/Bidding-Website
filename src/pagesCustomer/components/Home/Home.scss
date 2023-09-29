@@ -1,0 +1,146 @@
+.home {
+	padding-top: 8rem;
+	.homeImage {
+		margin: auto;
+		padding: 1rem;
+		max-width: 80%;
+	}
+}
+
+.secContainer {
+	padding: 0 1.5rem;
+	text-align: center;
+	// display: grid;
+	// justify-content: center;
+	gap: 2rem;
+	.homeText {
+		display: flex;
+		flex-direction: column;
+		.homeSpan {
+			color: var(--textColor);
+			font-weight: 400;
+			font-size: 15px;
+		}
+
+		.homeTitle {
+			color: var(--blackColor);
+			font-weight: 700;
+			font-size: 30px;
+		}
+
+		.btns {
+			gap: 1.5rem;
+			justify-content: center;
+			.btn {
+				padding: 10px 15px;
+				border-radius: 3px;
+				font-weight: 600;
+				margin-top: 0.5rem;
+				font-size: 12px;
+				&:hover {
+					background: var(--primaryColor);
+					color: var(--whiteColor);
+				}
+			}
+			.btn:nth-child(1) {
+				background: var(--whiteColor);
+				color: var(--textColor);
+				&:hover {
+					background: var(--primaryColor);
+					color: var(--whiteColor);
+				}
+			}
+			.btn:nth-child(2) {
+				&:hover {
+					background: var(--whiteColor);
+					color: var(--textColor);
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.home {
+		.secContainer {
+			.homeText {
+				.homeSpan {
+					font-size: 18px;
+				}
+				.homeTitle {
+					font-size: 35px;
+				}
+				.btns {
+					.btn {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		.homeImage {
+			max-width: 40%;
+		}
+	}
+}
+
+@media screen and (min-width: 770px) {
+	.home {
+		padding-top: 10rem;
+		.secContainer {
+			gap: 2.5rem;
+			.homeText {
+				.homeSpan {
+					font-size: 21px;
+				}
+				.homeTitle {
+					font-size: 45px;
+				}
+				.btns {
+					margin-top: 1rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 996px) {
+	.home {
+		padding-top: 12rem;
+		.secContainer {
+			gap: 3rem;
+			.homeText {
+				.homeSpan {
+					font-size: 35px;
+				}
+				.homeTitle {
+					font-size: 55px;
+				}
+				.btns {
+					.btn {
+						font-size: 17px;
+						padding: 0.7rem 2rem;
+					}
+				}
+			}
+		}
+		.homeImage {
+			max-width: 50%;
+		}
+	}
+}
+@media screen and (min-width: 1240px) {
+	.home {
+		.secContainer {
+			.homeText {
+				.homeSpan {
+					font-size: 30px;
+				}
+				.btns {
+					.btn {
+						font-size: 17px;
+					}
+				}
+			}
+		}
+	}
+}

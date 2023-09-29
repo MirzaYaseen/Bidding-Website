@@ -1,0 +1,87 @@
+.sellers {
+	background: var(--greyColor);
+	.secContainer {
+		margin: 2rem inherit;
+
+		.sellerContainer {
+			margin-top: 2rem;
+			.singleSeller {
+				padding: 0.5rem 0;
+				border-radius: 3px;
+				gap: 2rem;
+				transition: 0.3s ease-in-out;
+
+				.imgDiv {
+					width: 50px;
+					height: 50px;
+					object-fit: cover;
+					// padding: 2px;
+					background: rgb(237, 237, 237);
+					border-radius: 3px;
+					img {
+						height: 100%;
+					}
+				}
+				.info {
+					.name {
+						color: var(--blackColor);
+						font-size: 20px;
+					}
+					p {
+						font-size: 14px;
+					}
+				}
+				&:hover {
+					background: rgb(237, 237, 237);
+					padding: 0.5rem;
+					cursor: pointer;
+					// img {
+					// 	width: 50px;
+					// 	height: 50px;
+					// 	padding: 10px;
+					// 	border-radius: 3px;
+					// }
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.sellers {
+		.secContainer {
+			.secHeading {
+				margin-top: 2rem;
+				.secTitle {
+					font-size: 25px;
+				}
+				p {
+					font-size: 18px;
+				}
+			}
+			.sellerContainer {
+				grid-template-columns: repeat(2, 1fr);
+				gap: 1.5rem;
+
+				.singleContainer {
+					gap: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 840px) {
+	.sellers {
+		.secContainer {
+			.secHeading {
+				.secTitle {
+					font-size: 30px;
+				}
+				p {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.about {
+	padding: 2rem;
+	gap: 3rem;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+	.about {
+		flex-direction: row;
+	}
+}
